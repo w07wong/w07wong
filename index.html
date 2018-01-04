@@ -3,27 +3,43 @@
     <head>
         <title>William Wong</title>
         <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/js/typejs/typed.js"></script>
+        <link rel="stylesheet" href="assets/css/main.css" />
     </head>
     <body>
-        <header id="header">
+        <header class="header">
             <h1>William Wong</h1>
-            <p>I code, I design, I make.</p>
+            <div id="typed-strings">
+                <p>I code ^100</p>
+                <p>I design ^100</p>
+                <p>I make ^100</p>
+            </div>
+            <span id="typed"></span>
         </header>
-        <div id="links">
+        <div class="links">
             <ul class="icons">
-                <li><a href="./documents/William Wong Resume.pdf" class="resume-icon"><span class="label">Resume</span></a></li>
-                <li><a href="https://www.linkedin.com/in/william~wong/" class="linkedin-icon"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://github.com/w07wong" class="github-icon"><span class="label">Github</span></a></li>
-                <li><a href="https://appstore.com/Tabt" class="appstore-icon"><span class="label">App Store</span></a></li>
-                <li><a href="https://w07photography.blogspot.com/" class="photography-icon"><span class="label">Photography</span></a></li>
-                <li><a href="mailto:w07wong@gmail.com?Subject=Let's%20Connect" class="email-icon"><span class="label">Email</span></a></li>
+                <li><a href="documents/William Wong Resume.pdf" id="resume-icon"><span class="label">Resume</span></a></li>
+                <li><a href="https://www.linkedin.com/in/william~wong/" id="linkedin-icon"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/w07wong" id="github-icon"><span class="label">Github</span></a></li>
+                <li><a href="https://appstore.com/Tabt" id="appstore-icon"><span class="label">App Store</span></a></li>
+                <li><a href="https://w07photography.blogspot.com/" id="photography-icon"><span class="label">Photography</span></a></li>
+                <li><a href="mailto:w07wong@gmail.com?Subject=Let's%20Connect" id="email-icon"><span class="label">Email</span></a></li>
             </ul>
         </div>
-        <footer>
-            <ul class="copyright">
-                <li>&copy William Wong 2018</li>
-            </ul>
+        <footer class="footer">
+            <p>&copy William Wong 2018</p>
         </footer>
+        <script type="text/javascript">
+            var typed = new Typed("#typed", {
+                stringsElement: '#typed-strings',
+                typeSpeed: 40,
+                backSpeed: 10,
+                cursorChar: '_',
+                smartBackspace: true,
+                loop: true, 
+            });
+        </script>
     </body>
 </html>
