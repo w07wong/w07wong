@@ -17,6 +17,7 @@
                 <p>Mobile, Web, Blockchain, Data Analysis. ^100</p>
             </div>
             <span id="typed"></span>
+            <canvas class="background"></canvas>
         </div>
         <div class="links">
             <ul class="icons">
@@ -29,7 +30,17 @@
                 <li><a href="mailto:w07wong@gmail.com?Subject=Let's%20Connect" id="email-icon"><span class="label">Email</span></a></li>
             </ul>
         </div>
-        <script type="text/javascript">
+        <script src="assets/js/particles/particles.min.js"></script>
+    </body>
+    <script type="text/javascript">
+        window.onload = function() {
+            Particles.init({
+                selector: '.background',
+                color: '#FFFFFF',
+                maxParticles: 130,
+                connectParticles: true,
+            });
+    
             var typed = new Typed("#typed", {
                 stringsElement: '#typed-strings',
                 typeSpeed: 40,
@@ -38,8 +49,8 @@
                 smartBackspace: true,
                 loop: true, 
             });
-        </script>
-    </body>
+        };
+    </script>
     <footer>
             <p>&copy William Wong 2018</p>
     </footer>
