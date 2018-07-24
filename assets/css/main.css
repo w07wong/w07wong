@@ -55,6 +55,7 @@ footer {
 
 .links li {
     display: inline;
+    padding-right: 6px;
 }
 
 a:link {
