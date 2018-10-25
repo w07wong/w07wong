@@ -3,6 +3,7 @@ html, body {
     min-width:100%;
     margin:0;
     padding:0;
+    background-color: black;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
         rgba(0, 0, 0, 0.3)
       ), url("../../images/bg2.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0;
     background-size: cover;
     font-family: "Avenir", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
