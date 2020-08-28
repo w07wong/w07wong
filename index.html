@@ -1,57 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>William Wong</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="assets/js/typejs/typed.js"></script>
-        <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
-    <body>
-        <div class="header">
-            <h1>William Wong</h1>
-            <div id="typed-strings">
-                <p>I code, I design, I create. ^100</p>
-                <p>Software engineer with 6 years of industry experience. ^100</p>
-                <p>Machine Learning, Web, Data Analysis, Mobile, Blockchain. ^100</p>
-            </div>
-            <span id="typed"></span>
-            <canvas class="background"></canvas>
-        </div>
-        <div class="links">
-            <ul class="icons">
-                <li><a href="#" onclick='window.open("documents/William Wong Resume.pdf");return false;' id="resume-icon"><span class="label">Resume</span></a></li>
-                <li><a href="#" onclick='window.open("https://www.linkedin.com/in/william~wong");return false;' id="linkedin-icon"><span class="label">LinkedIn</span></a></li>
-                <li><a href="#" onclick='window.open("https://github.com/w07wong");return false;' id="github-icon"><span class="label">Github</span></a></li>
-                <li><a href="#" onclick='window.open("https://devpost.com/w07wong");return false;' id="devpost-icon"><span class="label">Devpost</span></a></li>
-                <li><a href="#" onclick='window.open("https://appstore.com/Tabt");return false;' id="appstore-icon"><span class="label">App Store</span></a></li>
-                <li><a href="#" onclick='window.open("https://w07photography.blogspot.com");return false;' id="photography-icon"><span class="label">Photography</span></a></li>
-                <li><a href="mailto:w07wong@gmail.com?Subject=Let's%20Connect" id="email-icon"><span class="label">Email</span></a></li>
-            </ul>
-        </div>
-        <script src="assets/js/particles/particles.min.js"></script>
-    </body>
-    <script type="text/javascript">
-        window.onload = function() {
-            Particles.init({
-                selector: '.background',
-                color: '#FFFFFF',
-                maxParticles: 130,
-                connectParticles: true,
-            });
-    
-            var typed = new Typed("#typed", {
-                stringsElement: '#typed-strings',
-                typeSpeed: 40,
-                backSpeed: 10,
-                cursorChar: '',
-                smartBackspace: true,
-                loop: true, 
-            });
-        };
-    </script>
-    <footer>
-            <p>&copy William Wong 2019</p>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>William Wong</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="main.css">
+      <link rel="author" href="William Wong">
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item">
+          <a href="#" onclick='window.open("documents/William Wong Resume.pdf");return false;' class="link link--dark">
+            <i class="fa fa-file"></i> Resume
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" onclick='window.open("https://www.github.com/w07wong");return false;' class="link link--dark">
+            <i class="fa fa-github"></i> Github
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" onclick='window.open("https://www.linkedin.com/in/william~wong");return false;' class="link link--dark">
+            <i class="fa fa-linkedin"></i> LinkedIn
+          </a>
+        </li> 
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <h1 class="main">William Wong</h1>
+      <p>
+        I am a senior at UC Berkeley majoring in computer science with a research 
+        focus in robotics.
+      </p>
+
+      <p>I have industry experience across 8 companies including Google and Amazon
+        in the past 7 years. My research broadly involves deep learning in the field of robotics at
+        the <a href="#" onclick='window.open("http://bair.berkeley.edu/");return false;'>Berkeley AI Research (BAIR)</a> Lab.
+      </p>
+      <p>
+        My skillset includes machine learning, backend development, automation, web development,
+        blockchain and mobile development.
+      </p>
+    </div>
+    <div class="wrapper">
+      <div class="research">
+        <h3 class="section">Research</h3>
+        <p>
+          I am currently exploring the application of AI in sustainable agriculture at BAIR under
+          Professor Ken Goldberg. My previous work includes robot workbench decluttering and an 
+          <a href="#" onclick='window.open("http://alphagarden.org");return false;'>AI art exhibition</a> in New York.
+        </p>
+        <ul>
+          <li>
+            <b>Best Student Paper</b>: Simulating Polyculture Farming to Tune Automation Policies
+            for Plant Diversity and Precision Irrigation. Yahav Avigal, <b>William Wong</b>, 
+            Jensen Gao, Kevin Li, Mark Theis, Mark Preston, Grady Pierroz, Fang Shuo Deng, 
+            Ken Goldberg. CASE 2020.
+            [<a href="#" onclick='window.open("https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F10jrYxskIAksn6oOTRzR9QAOk5DWMe4BF%2Fview%3Fusp%3Dsharing&followup=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F10jrYxskIAksn6oOTRzR9QAOk5DWMe4BF%2Fview%3Fusp%3Dsharing&flowName=GlifWebSignIn&flowEntry=ServiceLogin");return false;'>Paper</a>]
+            [<a href="#" onclick='window.open("https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1dl-wv86kOOcHL25iOQyYvw_rlgijI4Wi%2Fview&followup=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1dl-wv86kOOcHL25iOQyYvw_rlgijI4Wi%2Fview&flowName=GlifWebSignIn&flowEntry=ServiceLogin");return false;'>Video</a>]
+          </li>
+        </ul>
+      </div>
+      <div class="work">
+        <h3 class="section">Industry</h3>
+        <p>
+          Some companies I have worked at:
+        </p>
+        <ul>
+          <li>Amazon - added intelligence to a V1 stealth product.</li>
+          <li>
+            Google - created a pipeline for processing and surfacing millions of rows of data
+            daily.
+          </li>
+          <li>
+            Proteus Digital Health - automated backend infrastructure resulting in 60x speedup.
+          </li>
+          <li>
+            Vectorspace AI - applied machine learning for stock trading, head of blockchain development.
+          </li>
+        </ul>
+        <p>
+          Check out my <a href="#" onclick='window.open("documents/William Wong Resume.pdf");return false;'>resume</a> for a full summary of my experience.
+        </p>
+      </div>
+      <div class="projects">
+        <h3 class="section">Projects</h3>
+        <p>
+          A tiny snapshot of things I have coded in my free time:
+        </p>
+        <ul>
+          <li>DashOwl - featured at Google Cloud Next '19 conference, AI car crash detection.
+            [<a href="#" onclick='window.open("https://edu.google.com/why-google/case-studies/dashowl/?modal_active=none");return false;'>Publication</a>]
+          </li>
+          <li>Baxter Stopping Bot - an assembly line robot to stop objects on a conveyor belt.</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <footer class="footer">
+      Shoot me an email <a href="mailto:w07wong@gmail.com?Subject=Let%27s Connect">here</a>.
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
 </html>
