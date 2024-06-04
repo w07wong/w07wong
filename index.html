@@ -6,7 +6,8 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>William Wong</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+      <script src="https://kit.fontawesome.com/d47e45aa1a.js" crossorigin="anonymous"></script>
       <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
       <link rel="stylesheet" href="main.css">
@@ -19,31 +20,40 @@
         <div class="menu__item toggle"><span></span></div>
         <li class="menu__item">
           <a href="#" onclick='window.open("documents/William Wong Resume.pdf");return false;' class="link link--dark">
-            <i class="fa fa-file"></i> Resume
+            <i class="fa-solid fa-file"></i> Resume
           </a>
         </li>
         <li class="menu__item">
           <a href="#" onclick='window.open("https://www.github.com/w07wong");return false;' class="link link--dark">
-            <i class="fa fa-github"></i> Github
+            <i class="fa-brands fa-github"></i> Github
           </a>
         </li>
         <li class="menu__item">
           <a href="#" onclick='window.open("https://www.linkedin.com/in/william~wong");return false;' class="link link--dark">
-            <i class="fa fa-linkedin"></i> LinkedIn
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
           </a>
         </li> 
+        <li class="menu__item">
+          <a href="#" onclick='window.open("https://scholar.google.com/citations?user=V5FDxaAAAAAJ&hl");return false;' class="link link--dark">
+            <i class="fa-brands fa-google-scholar"></i> Google Scholar
+          </a>
+        </li>
       </ul>
     </nav>
     <div class="wrapper">
       <h1 class="main">William Wong</h1>
       <p>
-        I am a M.S. in Machine Learning student at CMU. I graduated from 
-        UC Berkeley majoring in computer science with a research focus in deep learning.
+        I currently am a Research Engineer at 
+        <a href="#" onclick='window.open("https://deepmind.google/");return false;'>Google DeepMind</a> as a core contributor to 
+        <a href="#" onclick='window.open("https://deepmind.google/technologies/gemini/");return false;'>Gemini</a>.
       </p>
 
       <p>I have industry experience across 11 companies including DeepMind, Google, and Amazon
-        over the past 8 years. My research broadly involves deep learning in the field of robotics at
-        the <a href="#" onclick='window.open("http://bair.berkeley.edu/");return false;'>Berkeley AI Research (BAIR)</a> Lab.
+        over the past 10 years. I graudated from 
+        <a href="#" onclick='window.open("https://eecs.berkeley.edu/cs/");return false;'>UC Berkeley</a> 
+        majoring in <span style="color: #351912"><b>Computer Science</b></span> and have a 
+        <span style="color: #351912"><b>Master's in Machine Learning</b></span> from 
+        <a href="#" onclick='window.open("https://www.ml.cmu.edu");return false;'>Carnegie Mellon University</a>.
       </p>
       <p>
         My skillset includes machine learning, backend development, automation, web development,
@@ -51,23 +61,72 @@
       </p>
     </div>
     <div class="wrapper">
+      <div class="work">
+        <h3 class="section">Industry</h3>
+        <p>
+          Some companies I have worked at:
+        </p>
+        <ul>
+          <li>Google DeepMind
+            <ul>
+              <li>Worked on the Gemini large language model.</li>
+              <li>Researched reinforcement learning to optimize Google's industrial air cooling systems.</li>
+            </ul>
+          </li>
+          <li>Amazon - added intelligence to the first Amazon Asto home robot.</li>
+          <li>
+            Google - created a pipeline that processes and surfaces millions of rows of data
+            daily.
+          </li>
+          <li>
+            Proteus Digital Health - automated backend infrastructure resulting in 60x speedup.
+          </li>
+          <li>
+            Vectorspace AI - applied machine learning for stock trading, head of blockchain development.
+          </li>
+        </ul>
+        <p>
+          Check out my <a href="#" onclick='window.open("documents/William Wong Resume.pdf");return false;'>resume</a> for a full summary of my experience.
+        </p>
+      </div>
       <div class="research">
         <h3 class="section">Research</h3>
         <p>
-          I previously explored the application of deep learning in sustainable agriculture at BAIR under
-          Professor Ken Goldberg.
-        </p>
-        <p>
-          My previous work includes studying imitation learning through
-          <a href="#" onclick='window.open("https://w07wong.github.io/Workbench-Game/");return false;'>robot workbench decluttering</a>, an 
-          <a href="#" onclick='window.open("http://alphagarden.org");return false;'>AI art exhibition</a> in 
-          <a href="#" onclick='window.open("https://blogs.newschool.edu/news/2020/02/the-question-of-intelligence-ai-and-the-future-of-humanity-exhibition-at-the-new-school-explores-works-focused-on-artificial-intelligence-and-what-it-means-for-the-state-of-being-human/");return false;'>New York</a>
-          and a JS port <a href="#" onclick='window.open("https://w07wong.github.io/bloomjs/");return false;'>found here</a> 
-          of <a href="#" onclick='window.open("http://memento.ieor.berkeley.edu/bloom/Mori.html");return false;'>Mori</a> by Goldberg et. al.
+          At Google DeepMind, my research focus as been on Large Language Models and Reinforcement Learning.
         </p>
         <ul class="research-papers">
           <li>
-            <b>IEEE T-ASE 2022 Journal Paper</b>: <u><i>Simulating Polyculture Farming to Tune Automation Policies
+            <b>Gemini Technical Report 2023</b>: <u><i>Gemini: a family of highly capable multimodal models</i></u>
+            [<a href="#" onclick='window.open("https://arxiv.org/abs/2312.11805");return false;'>Paper</a>]
+          </li>
+          <li>
+            <b>NeurIPS 2022 Reinforcement Learning for Real Life Workshop</b>: <u><i>Optimizing Industrial HVAC Systems with Hierarchical Reinforcement Learning</i></u>
+            [<a href="#" onclick='window.open("https://arxiv.org/abs/2209.08112");return false;'>Paper</a>]
+            <ul class="authors">
+              <li><b>William Wong</b>, Praneet Dutta, Octavian Voicu, Yuri Chervonyi, Cosmin Paduraru, Jerry Luo. 
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          With Professor Zach Lipton, I investigated risk sensitive learning and optimization methods to improve continual learning.
+        </p>
+        <ul class="research-papers">
+          <li>
+            <b>ICML 2022 Responsible Decision Making in Dynamic Environments</b>: <u><i>RiskyZoo: A Library for Risk-Sensitive Supervised Learning</i></u>
+            [<a href="#" onclick='window.open("https://responsibledecisionmaking.github.io/assets/pdf/papers/31.pdf");return false;'>Paper</a>]
+            [<a href="#" onclick='window.open("https://github.com/w07wong/RiskyZoo/tree/main");return false'>Code</a>]
+            <ul class="authors">
+              <li><b>William Wong</b>, Audrey Huang, Liu Leqi, Kamyar Azizzadenesheli, Zachary C Lipton.
+              </li>
+            </ul>
+        </ul>
+        <p>
+          I explored the application of deep learning in sustainable agriculture at BAIR under Professor Ken Goldberg.
+        </p>
+        <ul class="research-papers">
+          <li>
+            <b>IEEE T-ASE 2022 Journal</b>: <u><i>Simulating Polyculture Farming to Tune Automation Policies
             for Plant Diversity and Precision Irrigation</i></u>
             [<a href="#" onclick='window.open("https://ieeexplore.ieee.org/document/9684020");return false;'>Paper (IEEE)</a>]
             [<a href="#" onclick='window.open("https://github.com/BerkeleyAutomation/AlphaGarden");return false'>Code</a>]
@@ -107,33 +166,19 @@
             </ul>
           </li>
         </ul>
-      </div>
-      <div class="work">
-        <h3 class="section">Industry</h3>
         <p>
-          Some companies I have worked at:
-        </p>
-        <ul>
-          <li>Amazon - added intelligence to the first Amazon Asto home robot.</li>
-          <li>
-            Google - created a pipeline that processes and surfaces millions of rows of data
-            daily.
-          </li>
-          <li>
-            Proteus Digital Health - automated backend infrastructure resulting in 60x speedup.
-          </li>
-          <li>
-            Vectorspace AI - applied machine learning for stock trading, head of blockchain development.
-          </li>
-        </ul>
-        <p>
-          Check out my <a href="#" onclick='window.open("documents/William Wong Resume.pdf");return false;'>resume</a> for a full summary of my experience.
+          I also studied imitation learning through
+          <a href="#" onclick='window.open("https://w07wong.github.io/Workbench-Game/");return false;'>robot workbench decluttering</a>, created an 
+          <a href="#" onclick='window.open("http://alphagarden.org");return false;'>AI art exhibition</a> in 
+          <a href="#" onclick='window.open("https://blogs.newschool.edu/news/2020/02/the-question-of-intelligence-ai-and-the-future-of-humanity-exhibition-at-the-new-school-explores-works-focused-on-artificial-intelligence-and-what-it-means-for-the-state-of-being-human/");return false;'>New York</a>
+          and wrote an earthquake visualization art piece 
+          <a href="#" onclick='window.open("https://w07wong.github.io/bloomjs/");return false;'>Mori</a> by Goldberg et. al.
         </p>
       </div>
       <div class="projects">
         <h3 class="section">Projects</h3>
         <p>
-          A small snapshot of things I have coded in my free time:
+          A small snapshot of projects I worked on elsewhere:
         </p>
         <ul>
           <li>DashOwl - featured at Google Cloud Next '19 conference, AI car crash detection.
